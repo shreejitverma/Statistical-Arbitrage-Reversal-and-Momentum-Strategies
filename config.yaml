@@ -1,0 +1,62 @@
+# Configuration file for Statistical Arbitrage Momentum Strategy
+
+# Data Configuration
+data:
+  start_date: "2018-01-01"
+  end_date: null  # null means current date
+  frequency: "1d"  # Daily bars
+  
+# Asset Configuration
+assets:
+  primary: 
+    - BTCUSDT
+    - ETHUSDT
+    - ADAUSDT
+    - BNBUSDT
+  
+  expanded: 
+    - XRPUSDT
+    - SOLUSDT
+    - DOGEUSDT
+    - MATICUSDT
+    - LINKUSDT
+    - UNIUSDT
+    - AAVEUSDT
+    - ATOMUSDT
+  
+# Strategy Configuration
+strategy:
+  liquidity_threshold: 0.40  # 40% threshold for zero-volume periods
+  
+  # Momentum timeframes (in days)
+  momentum_windows: [60, 120, 252]
+  
+  # Reversal timeframes (in days)
+  reversal_windows: [1, 5, 10, 20]
+  
+  # Transaction costs
+  transaction_cost_pct: 0.0005  # 5 basis points
+  
+  # Portfolio construction
+  equal_weighted: true
+  dollar_neutral: true
+  
+# Backtesting Configuration
+backtest:
+  min_assets: 8  # Minimum assets required for analysis
+  periods_per_year: 252  # Trading days per year
+  benchmark: "BTCUSDT"  # Benchmark symbol
+  
+# Risk Management
+risk:
+  max_position_size: 0.20  # Max 20% per position
+  max_drawdown_stop: -0.50  # Stop at -50% drawdown
+  rebalance_frequency: "daily"  # Daily rebalancing
+  
+# Output Configuration
+output:
+  save_results: true
+  results_dir: "./results"
+  save_plots: true
+  plots_dir: "./plots"
+  verbose: true
