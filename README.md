@@ -350,7 +350,7 @@ If you use this research in your work, please cite:
 
 ## Changelog
 
-### Version 1.0.0 (December 2024)
+### Version 1.0.0 (Aug 2025)
 - Initial release
 - Core strategy implementation
 - Backtest engine
@@ -358,7 +358,7 @@ If you use this research in your work, please cite:
 
 ---
 
-**Last Updated**: December 2024  
+**Last Updated**: Aug 2025  
 **Status**: Active Development
 
 For questions, issues, or suggestions, please open a GitHub issue or contact the author.
