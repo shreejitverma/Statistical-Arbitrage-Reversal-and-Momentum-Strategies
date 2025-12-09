@@ -101,7 +101,7 @@ Edit `config.yaml` to customize:
 # Data Configuration
 data:
   start_date: "2018-01-01"
-  end_date: "2024-12-31"
+  end_date: "2025-12-31"
   frequency: "1d"  # Daily bars
   
 # Asset Configuration
@@ -262,7 +262,7 @@ metrics = analyzer.calculate_performance_metrics(
 
 ## Limitations
 
-- **Backtest Period**: Analysis based on historical data (Jan 2018 - Dec 2024)
+- **Backtest Period**: Analysis based on historical data (Jan 2018 - Dec 2025)
 - **Transaction Costs**: Assumes 5bps per trade; actual costs may vary
 - **Market Impact**: Does not account for slippage on large positions
 - **Liquidity Changes**: Cryptocurrency market liquidity has evolved significantly
@@ -334,10 +334,10 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 If you use this research in your work, please cite:
 
 ```bibtex
-@misc{verma2024statarb,
+@misc{verma2025statarb,
   author={Verma, Shreejit},
   title={Statistical Arbitrage Momentum Strategy: A Quantitative Analysis},
-  year={2024},
+  year={2025},
   url={https://github.com/shreejitverma/statistical-arbitrage-momentum}
 }
 ```
